@@ -10,8 +10,14 @@ cache:
 sudo: false
 
 before_script:
-  - node ./check-bluebird-version.js
+  - ./check-bluebird-version
 
 env:
   - HACKBLUEBIRD=2.9.24 BROWSERS="SauceLab(chrome,OS X 10.10,43)"
+  - HACKBLUEBIRD=2.9.25 BROWSERS="SauceLab(chrome,OS X 10.10,43)"
+  - HACKBLUEBIRD=2.9.26 BROWSERS="SauceLab(chrome,OS X 10.10,43)"
+  - HACKBLUEBIRD=2.9.27 BROWSERS="SauceLab(chrome,OS X 10.10,43)"
+  - HACKBLUEBIRD=2.9.28 BROWSERS="SauceLab(chrome,OS X 10.10,43)"
+  - HACKBLUEBIRD=2.9.29 BROWSERS="SauceLab(chrome,OS X 10.10,43)"
+  - HACKBLUEBIRD=2.9.30 BROWSERS="SauceLab(chrome,OS X 10.10,43)"
   - BROWSERS="SauceLab(chrome,OS X 10.10,43)"
