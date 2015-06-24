@@ -9,13 +9,9 @@ cache:
 
 sudo: false
 
-env:
-  - BROWSERS="SauceLab(chrome,Windows 7,37)"
-  - BROWSERS="SauceLab(chrome,Windows 7,43)"
-  - BROWSERS="SauceLab(chrome,OS X 10.10,37)"
-  - BROWSERS="SauceLab(chrome,OS X 10.10,43)"
+before_script:
+  - node ./check-bluebird-version.js
 
-  - BROWSERS="SauceLab(chrome,Windows 7,37)" ASYNC=1
-  - BROWSERS="SauceLab(chrome,Windows 7,43)" ASYNC=1
-  - BROWSERS="SauceLab(chrome,OS X 10.10,37)" ASYNC=1
-  - BROWSERS="SauceLab(chrome,OS X 10.10,43)" ASYNC=1
+env:
+  - HACKBLUEBIRD=2.9.24 BROWSERS="SauceLab(chrome,OS X 10.10,43)"
+  - BROWSERS="SauceLab(chrome,OS X 10.10,43)"

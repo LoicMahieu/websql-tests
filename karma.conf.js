@@ -55,17 +55,17 @@ module.exports = function(karma) {
     frameworks: [ 'jasmine', 'browserify' ],
 
     files: [
-      'test/websql.js'
+      'test/knex.js'
     ],
 
     preprocessors: {
-      'test/websql.js': [ 'browserify' ]
+      'test/knex.js': [ 'browserify' ]
     },
 
     browsers: (
       isSauce ? Object.keys(customLaunchers) : (
         BROWSERS.match(/\w+/g) ||
-        [ 'Chrome', 'Safari', 'PhantomJS' ]
+        [ 'Chrome' ]
       )
     ),
 

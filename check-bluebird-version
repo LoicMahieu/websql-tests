@@ -1,0 +1,5 @@
+
+if [[ $HACKBLUEBIRD ]]; then
+  rm -rf node_modules/knex/node_modules/bluebird
+  npm install bluebird@$HACKBLUEBIRD
+fi
