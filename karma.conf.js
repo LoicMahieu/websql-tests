@@ -35,9 +35,9 @@ module.exports = function(karma) {
     customLaunchers = {
       sl_custom: {
         base: 'SauceLabs',
-        browserName: customSauce[0],
-        platform: customSauce[1],
-        version: customSauce[2]
+        browserName: customSauce[1],
+        platform: customSauce[2],
+        version: customSauce[3]
       }
     };
   }
