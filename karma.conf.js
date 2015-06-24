@@ -15,7 +15,9 @@ module.exports = function(karma) {
       'test/websql.js': [ 'browserify' ]
     },
 
-    browsers: [ 'Chrome', 'Safari', 'PhantomJS' ],
+    browsers: (
+      process.env.BROWSERS.match(/\w+/g) || [ 'Chrome', 'Safari', 'PhantomJS' ]
+    ),
 
     singleRun: false,
     autoWatch: true,
