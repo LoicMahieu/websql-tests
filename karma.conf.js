@@ -1,7 +1,8 @@
 'use strict';
 
 module.exports = function(karma) {
-  var isSauce = !!process.env.BROWSERS.match(/^Sauce/);
+  var BROWSERS = process.env.BROWSERS || '';
+  var isSauce = !!BROWSERS.match(/^Sauce/);
 
   var customLaunchers = {
     sl_chrome: {
@@ -29,7 +30,7 @@ module.exports = function(karma) {
     }
   };
 
-  var customSauce = process.env.BROWSERS.match(/^SauceLab\((.+),(.+),(.+)\)$/);
+  var customSauce = BROWSERS.match(/^SauceLab\((.+),(.+),(.+)\)$/);
   if (customSauce) {
     customLaunchers = {
       sl_custom: {
@@ -53,15 +54,13 @@ module.exports = function(karma) {
       'test/websql.js'
     ],
 
-    reporters: [ 'dots' ],
-
     preprocessors: {
       'test/websql.js': [ 'browserify' ]
     },
 
     browsers: (
       isSauce ? Object.keys(customLaunchers) : (
-        process.env.BROWSERS.match(/\w+/g) ||
+        BROWSERS.match(/\w+/g) ||
         [ 'Chrome', 'Safari', 'PhantomJS' ]
       )
     ),
