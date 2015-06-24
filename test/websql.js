@@ -49,20 +49,38 @@ describe('Test WebSQL Broken', function () {
     setTimeout(done, 10);
   }
 
+  if (process.env.ASYNC == '1') {
+    it('ASYNC - Create table and insert user', function (done) {
+      db.transaction(function (t) {
+      createUserTable(t, function () {
+      defer(function () {
+      createUser(t, function () {
+      getUsers(t, function (tx, res) {
 
-  it('Create table and insert user', function (done) {
-    db.transaction(function (t) {
-    createUserTable(t, function () {
-    createUser(t, function () {
-    getUsers(t, function (tx, res) {
+        expect(res.rows.length == 1).toBe(true)
+        done()
 
-      expect(res.rows.length == 1).toBe(true)
-      done()
+      })
+      })
+      })
+      })
+      })
+    })
+  } else {
+    it('Create table and insert user', function (done) {
+      db.transaction(function (t) {
+      createUserTable(t, function () {
+      createUser(t, function () {
+      getUsers(t, function (tx, res) {
 
+        expect(res.rows.length == 1).toBe(true)
+        done()
+
+      })
+      })
+      })
+      })
     })
-    })
-    })
-    })
-  })
+  }
 
 })

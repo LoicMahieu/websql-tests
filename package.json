@@ -15,6 +15,7 @@
   "license": "ISC",
   "devDependencies": {
     "babelify": "^6.1.2",
+    "envify": "^3.4.0",
     "jasmine-core": "^2.3.4",
     "karma": "^0.12.37",
     "karma-browserify": "^4.2.1",

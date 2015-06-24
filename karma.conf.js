@@ -77,7 +77,7 @@ module.exports = function(karma) {
     // browserify configuration
     browserify: {
       debug: true,
-      transform: ['babelify']
+      transform: ['babelify', ['envify', { ASYNC: process.env.ASYNC }]]
     }
   });
 };

@@ -5,4 +5,9 @@ node_js:
 
 env:
   - BROWSERS="SauceLab(chrome,Windows 7,35)"
+  - BROWSERS="SauceLab(chrome,Windows 7,43)"
   - BROWSERS="SauceLab(iphone,OS X 10.9,7.1)"
+
+  - BROWSERS="SauceLab(chrome,Windows 7,35)" ASYNC=1
+  - BROWSERS="SauceLab(chrome,Windows 7,43)" ASYNC=1
+  - BROWSERS="SauceLab(iphone,OS X 10.9,7.1)" ASYNC=1
