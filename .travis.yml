@@ -4,4 +4,4 @@ node_js:
   - 0.10
 
 env:
-  - BROWSERS=SauceLab(chrome,Windows 7,35)
+  - "BROWSERS=SauceLab(chrome,Windows 7,35)"
