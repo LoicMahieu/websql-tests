@@ -3,15 +3,19 @@ language: node_js
 node_js:
   - 0.10
 
+cache:
+  directories:
+    - node_modules
+
+sudo: false
+
 env:
   - BROWSERS="SauceLab(chrome,Windows 7,35)"
   - BROWSERS="SauceLab(chrome,Windows 7,43)"
   - BROWSERS="SauceLab(chrome,OS X 10.10,35)"
   - BROWSERS="SauceLab(chrome,OS X 10.10,43)"
-  - BROWSERS="SauceLab(iphone,OS X 10.9,7.1)"
 
   - BROWSERS="SauceLab(chrome,Windows 7,35)" ASYNC=1
   - BROWSERS="SauceLab(chrome,Windows 7,43)" ASYNC=1
   - BROWSERS="SauceLab(chrome,OS X 10.10,35)" ASYNC=1
   - BROWSERS="SauceLab(chrome,OS X 10.10,43)" ASYNC=1
-  - BROWSERS="SauceLab(iphone,OS X 10.9,7.1)" ASYNC=1
