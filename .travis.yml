@@ -26,3 +26,12 @@ env:
   - HACKBLUEBIRD=2.9.29 BROWSERS="SauceLab(iphone,OS X 10.10,8.2)"
   - HACKBLUEBIRD=2.9.30 BROWSERS="SauceLab(iphone,OS X 10.10,8.2)"
   - BROWSERS="SauceLab(iphone,OS X 10.10,8.2)"
+
+  - HACKBLUEBIRD=2.9.24 BROWSERS="SauceLab(safari,OS X 10.10,8)"
+  - HACKBLUEBIRD=2.9.25 BROWSERS="SauceLab(safari,OS X 10.10,8)"
+  - HACKBLUEBIRD=2.9.26 BROWSERS="SauceLab(safari,OS X 10.10,8)"
+  - HACKBLUEBIRD=2.9.27 BROWSERS="SauceLab(safari,OS X 10.10,8)"
+  - HACKBLUEBIRD=2.9.28 BROWSERS="SauceLab(safari,OS X 10.10,8)"
+  - HACKBLUEBIRD=2.9.29 BROWSERS="SauceLab(safari,OS X 10.10,8)"
+  - HACKBLUEBIRD=2.9.30 BROWSERS="SauceLab(safari,OS X 10.10,8)"
+  - BROWSERS="SauceLab(safari,OS X 10.10,8)"
