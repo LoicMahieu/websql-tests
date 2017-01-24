@@ -14,16 +14,16 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "babelify": "^6.1.2",
-    "envify": "^3.4.0",
+    "babelify": "^7.3.0",
+    "envify": "^4.0.0",
     "jasmine-core": "^2.3.4",
-    "karma": "^0.12.37",
-    "karma-browserify": "^4.2.1",
-    "karma-chrome-launcher": "^0.2.0",
-    "karma-jasmine": "^0.3.5",
-    "karma-phantomjs-launcher": "^0.2.0",
-    "karma-safari-launcher": "^0.1.1",
-    "karma-sauce-launcher": "^0.2.11",
-    "phantomjs": "^1.9.17"
+    "karma": "^1.4.0",
+    "karma-browserify": "^5.1.0",
+    "karma-chrome-launcher": "^2.0.0",
+    "karma-jasmine": "^1.1.0",
+    "karma-phantomjs-launcher": "^1.0.2",
+    "karma-safari-launcher": "^1.0.0",
+    "karma-sauce-launcher": "^1.1.0",
+    "phantomjs": "^2.1.7"
   }
 }
